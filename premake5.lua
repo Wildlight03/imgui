@@ -2,8 +2,8 @@ project "ImGui"
 	kind "StaticLib"
 	language "C++"
 
-	targetdir ("Build/" .. outputdir .. "/%{prj.name}")
-	objdir ("Intermediate/" .. outputdir .. "/%{prj.name}")
+	targetdir ("Build/" .. OutputDir .. "/%{prj.name}")
+	objdir ("Intermediate/" .. OutputDir .. "/%{prj.name}")
 
 	files
 	{
@@ -13,6 +13,7 @@ project "ImGui"
 		"imgui_draw.cpp",
 		"imgui_internal.h",
 		"imgui_widgets.cpp",
+		"imgui_tables.cpp", 
 		"imstb_rectpack.h",
 		"imstb_textedit.h",
 		"imstb_truetype.h",
